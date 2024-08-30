@@ -4,22 +4,38 @@ import {
   loginUserApi,
   getUserApi,
   updateUserApi,
-  logoutApi
+  logoutApi,
+  TLoginData
 } from '@api';
 import { TUser } from '@utils-types';
+import { deleteCookie, setCookie } from '../../utils/cookie';
 
 export const registerUser = createAsyncThunk(
   'user/registerUser',
   registerUserApi
 );
 
-export const loginUser = createAsyncThunk('user/loginUser', loginUserApi);
+export const loginUser = createAsyncThunk(
+  'user/loginUser',
+  async (loginData: TLoginData) => {
+    const data = await loginUserApi(loginData);
+    setCookie('accessToken', data.accessToken);
+    localStorage.setItem('refreshToken', data.refreshToken);
+    return data;
+  }
+);
 
 export const getUser = createAsyncThunk('user/getUser', getUserApi);
 
 export const updateUser = createAsyncThunk('user/updateUser', updateUserApi);
 
-export const logoutUser = createAsyncThunk('user/logoutUser', logoutApi);
+export const logoutUser = createAsyncThunk('user/logoutUser', async () => {
+  logoutApi().then(() => {
+    localStorage.clear();
+    deleteCookie('accessToken');
+    localStorage.removeItem('refreshToken');
+  });
+});
 
 interface UserState {
   user: TUser;
