@@ -1,0 +1,76 @@
+{
+    "success": true,
+    "order": {
+        "ingredients": [
+            {
+                "_id": "643d69a5c3f7b9001cfa093d",
+                "name": "Флюоресцентная булка R2-D3",
+                "type": "bun",
+                "proteins": 44,
+                "fat": 26,
+                "carbohydrates": 85,
+                "calories": 643,
+                "price": 988,
+                "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "643d69a5c3f7b9001cfa093e",
+                "name": "Филе Люминесцентного тетраодонтимформа",
+                "type": "main",
+                "proteins": 44,
+                "fat": 26,
+                "carbohydrates": 85,
+                "calories": 643,
+                "price": 988,
+                "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "643d69a5c3f7b9001cfa0949",
+                "name": "Мини-салат Экзо-Плантаго",
+                "type": "main",
+                "proteins": 1,
+                "fat": 2,
+                "carbohydrates": 3,
+                "calories": 6,
+                "price": 4400,
+                "image": "https://code.s3.yandex.net/react/code/salad.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "643d69a5c3f7b9001cfa0944",
+                "name": "Соус традиционный галактический",
+                "type": "sauce",
+                "proteins": 42,
+                "fat": 24,
+                "carbohydrates": 42,
+                "calories": 99,
+                "price": 15,
+                "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "66d3bb5d119d45001b503478",
+        "owner": {
+            "email": "yury@test.ru",
+            "name": "yury",
+            "createdAt": "2024-09-01T00:25:39.310Z",
+            "updatedAt": "2024-09-01T00:25:39.310Z"
+        },
+        "status": "done",
+        "name": "Экзо-плантаго традиционный-галактический флюоресцентный люминесцентный бургер",
+        "createdAt": "2024-09-01T00:54:53.814Z",
+        "updatedAt": "2024-09-01T00:54:54.392Z",
+        "number": 51678,
+        "price": 6391
+    }
+}

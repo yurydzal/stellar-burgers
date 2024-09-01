@@ -1,5 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { orderBurgerApi, getOrdersApi, getOrderByNumberApi } from '@api';
+import {
+  orderBurgerApi,
+  getOrdersApi,
+  getOrderByNumberApi
+} from '../../utils/burger-api';
 import { TOrder } from '@utils-types';
 
 export const newOrder = createAsyncThunk('orders/newOrder', orderBurgerApi);
@@ -19,7 +23,7 @@ interface OrderState {
   error: string | null;
 }
 
-const initialState: OrderState = {
+export const initialState: OrderState = {
   orders: [],
   data: null,
   isRequested: false,

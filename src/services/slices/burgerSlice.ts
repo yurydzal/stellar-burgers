@@ -7,7 +7,7 @@ interface BurgerState {
   ingredients: TConstructorIngredient[];
 }
 
-const initialState: BurgerState = {
+export const initialState: BurgerState = {
   bun: null,
   ingredients: []
 };
