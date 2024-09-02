@@ -6,7 +6,7 @@ import {
   updateUserApi,
   logoutApi,
   TLoginData
-} from '@api';
+} from '../../utils/burger-api';
 import { TUser } from '@utils-types';
 import { deleteCookie, setCookie } from '../../utils/cookie';
 
@@ -44,7 +44,7 @@ interface UserState {
   error: string | null;
 }
 
-const initialState: UserState = {
+export const initialState: UserState = {
   user: {
     email: '',
     name: ''
